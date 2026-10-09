@@ -24,7 +24,7 @@ import java.util.Map;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.egf.core.EGFCorePlugin;
+import org.eclipse.egf.core.platform.EGFPlatformPlugin;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -68,7 +68,7 @@ public class TargetPlatformEcoreModelWizard extends EcoreModelWizard {
                         // Create a resource set
                         //
                         ResourceSet resourceSet = new ResourceSetImpl();
-                        resourceSet.setURIConverter(EGFCorePlugin.getTargetPlatformURIConverter());
+                        resourceSet.setURIConverter(EGFPlatformPlugin.getPlatformURIConverter());
 
                         // Get the URI of the model file.
                         //

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -26,6 +26,7 @@ public class buildxmldeleteStep extends org.eclipse.egf.portfolio.eclipse.build.
 	protected final String TEXT_3 = " >";
 	protected final String TEXT_4 = NL;
 	protected final String TEXT_5 = NL + "\t\t</delete>" + NL + "\t</target>" + NL + NL;
+	protected final String TEXT_6 = NL;
 
 	public buildxmldeleteStep() {
 		//Here is the constructor
@@ -64,8 +65,8 @@ public class buildxmldeleteStep extends org.eclipse.egf.portfolio.eclipse.build.
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_4);
-		stringBuffer.append(TEXT_4);
+		stringBuffer.append(TEXT_6);
+		stringBuffer.append(TEXT_6);
 		return stringBuffer.toString();
 	}
 

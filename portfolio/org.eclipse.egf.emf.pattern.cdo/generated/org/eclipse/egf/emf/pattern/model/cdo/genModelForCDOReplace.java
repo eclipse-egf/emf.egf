@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.emf.pattern.model.cdo;
 
 import java.util.*;
@@ -16,7 +16,6 @@ public class genModelForCDOReplace extends org.eclipse.egf.emf.pattern.model.cdo
 	public genModelForCDOReplace() {
 		//Here is the constructor
 		// add initialisation of the pattern variables (declaration has been already done).
-
 	}
 
 	public void generate(Object argument) throws Exception {

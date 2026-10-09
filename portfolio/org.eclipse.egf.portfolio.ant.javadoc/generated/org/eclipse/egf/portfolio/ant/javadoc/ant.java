@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.ant.javadoc;
 
 import org.eclipse.egf.common.helper.*;
@@ -39,6 +39,7 @@ public class ant {
 	protected final String TEXT_9 = NL;
 	protected final String TEXT_10 = "\t</javadoc>";
 	protected final String TEXT_11 = "\t</target>" + NL + "</project>" + NL + "\t";
+	protected final String TEXT_12 = NL;
 
 	public ant() {
 		//Here is the constructor
@@ -66,8 +67,8 @@ public class ant {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_9);
-		stringBuffer.append(TEXT_9);
+		stringBuffer.append(TEXT_12);
+		stringBuffer.append(TEXT_12);
 		return stringBuffer.toString();
 	}
 

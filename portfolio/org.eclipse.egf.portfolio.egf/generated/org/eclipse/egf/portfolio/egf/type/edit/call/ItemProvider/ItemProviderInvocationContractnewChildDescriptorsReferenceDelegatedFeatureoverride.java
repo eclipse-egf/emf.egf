@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.egf.type.edit.call.ItemProvider;
 
 import org.eclipse.egf.common.helper.*;
@@ -33,6 +33,7 @@ public class ItemProviderInvocationContractnewChildDescriptorsReferenceDelegated
 	protected final String TEXT_8 = ".createEntry(";
 	protected final String TEXT_9 = ", type)));" + NL + "                }" + NL + "            }" + NL + "        }";
 	protected final String TEXT_10 = NL;
+	protected final String TEXT_11 = NL;
 
 	public ItemProviderInvocationContractnewChildDescriptorsReferenceDelegatedFeatureoverride() {
 		//Here is the constructor
@@ -108,8 +109,8 @@ public class ItemProviderInvocationContractnewChildDescriptorsReferenceDelegated
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_10);
-		stringBuffer.append(TEXT_10);
+		stringBuffer.append(TEXT_11);
+		stringBuffer.append(TEXT_11);
 		return stringBuffer.toString();
 	}
 

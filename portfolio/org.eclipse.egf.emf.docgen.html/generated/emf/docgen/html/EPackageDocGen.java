@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package emf.docgen.html;
 
 import org.eclipse.egf.emf.docgen.html.util.*;
@@ -33,6 +33,7 @@ public class EPackageDocGen extends emf.docgen.html.ENamedElementDocGen {
 	protected final String TEXT_11 = NL + "\t\t<li>" + NL + "\t\t\t<a href=\"";
 	protected final String TEXT_12 = NL + "\t<p><i>back to </i> <a href=\"";
 	protected final String TEXT_13 = "</a> </p>";
+	protected final String TEXT_14 = NL;
 
 	public EPackageDocGen() {
 		//Here is the constructor
@@ -60,8 +61,8 @@ public class EPackageDocGen extends emf.docgen.html.ENamedElementDocGen {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_14);
+		stringBuffer.append(TEXT_14);
 		return stringBuffer.toString();
 	}
 

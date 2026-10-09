@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -27,6 +27,7 @@ public class buildxmlzipStep extends org.eclipse.egf.portfolio.eclipse.build.buc
 	protected final String TEXT_5 = " >";
 	protected final String TEXT_6 = NL;
 	protected final String TEXT_7 = NL + "\t\t</zip>" + NL + "\t</target>" + NL + NL;
+	protected final String TEXT_8 = NL;
 
 	public buildxmlzipStep() {
 		//Here is the constructor
@@ -64,8 +65,8 @@ public class buildxmlzipStep extends org.eclipse.egf.portfolio.eclipse.build.buc
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_6);
-		stringBuffer.append(TEXT_6);
+		stringBuffer.append(TEXT_8);
+		stringBuffer.append(TEXT_8);
 		return stringBuffer.toString();
 	}
 

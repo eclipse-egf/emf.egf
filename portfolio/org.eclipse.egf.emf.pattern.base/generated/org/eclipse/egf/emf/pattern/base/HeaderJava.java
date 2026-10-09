@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110291409
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.emf.pattern.base;
 
 import org.eclipse.egf.common.helper.*;

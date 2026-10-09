@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -26,6 +26,7 @@ public class buildxmlmoveStep extends org.eclipse.egf.portfolio.eclipse.build.bu
 	protected final String TEXT_4 = " >";
 	protected final String TEXT_5 = NL;
 	protected final String TEXT_6 = NL + "\t\t</move>" + NL + "\t</target>" + NL + NL;
+	protected final String TEXT_7 = NL;
 
 	public buildxmlmoveStep() {
 		//Here is the constructor
@@ -64,8 +65,8 @@ public class buildxmlmoveStep extends org.eclipse.egf.portfolio.eclipse.build.bu
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_5);
-		stringBuffer.append(TEXT_5);
+		stringBuffer.append(TEXT_7);
+		stringBuffer.append(TEXT_7);
 		return stringBuffer.toString();
 	}
 

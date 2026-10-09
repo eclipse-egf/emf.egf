@@ -12,8 +12,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-
-import org.apache.commons.codec.binary.Base64;
+import java.util.Base64;
 
 public class DeploymentHelper {
 	enum RequestType {
@@ -127,7 +126,7 @@ public class DeploymentHelper {
 		openConnection.setUseCaches(false);
 		
 		String authString = login + ":" + password;
-		String encoded = new String(Base64.encodeBase64(authString.getBytes()));
+		String encoded = new String(Base64.getEncoder().encodeToString(authString.getBytes()));
 		openConnection.setRequestProperty("Authorization", "Basic " + encoded);
 		
 		return openConnection;

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -50,6 +50,7 @@ public class buildxmlbuildStep extends org.eclipse.egf.portfolio.eclipse.build.b
 			+ "                <arg value=\"--clean\" />" + NL + "                <arg value=\"--thorough\" />" + NL
 			+ "            </cmdargs>" + NL + "\t\t</buckminster>";
 	protected final String TEXT_13 = "    </target>" + NL + NL;
+	protected final String TEXT_14 = NL;
 
 	public buildxmlbuildStep() {
 		//Here is the constructor
@@ -88,8 +89,8 @@ public class buildxmlbuildStep extends org.eclipse.egf.portfolio.eclipse.build.b
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_8);
-		stringBuffer.append(TEXT_8);
+		stringBuffer.append(TEXT_14);
+		stringBuffer.append(TEXT_14);
 		return stringBuffer.toString();
 	}
 

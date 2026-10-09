@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.hudson.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -35,6 +35,7 @@ public class Propertysecurity extends org.eclipse.egf.portfolio.eclipse.build.hu
 	protected final String TEXT_12 = "</permission>" + NL + "      <permission>hudson.model.Run.Update:";
 	protected final String TEXT_13 = NL + "    </hudson.security.AuthorizationMatrixProperty>";
 	protected final String TEXT_14 = NL;
+	protected final String TEXT_15 = NL;
 
 	public Propertysecurity() {
 		//Here is the constructor
@@ -72,8 +73,8 @@ public class Propertysecurity extends org.eclipse.egf.portfolio.eclipse.build.hu
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_14);
-		stringBuffer.append(TEXT_14);
+		stringBuffer.append(TEXT_15);
+		stringBuffer.append(TEXT_15);
 		return stringBuffer.toString();
 	}
 

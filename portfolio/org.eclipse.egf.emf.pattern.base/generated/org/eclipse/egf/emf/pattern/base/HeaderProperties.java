@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110291409
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.emf.pattern.base;
 
 import org.eclipse.egf.common.helper.*;
@@ -25,6 +25,7 @@ public class HeaderProperties extends org.eclipse.egf.emf.pattern.base.HeaderAbs
 	protected final String TEXT_3 = NL + "#" + NL + "# ";
 	protected final String TEXT_4 = "Id";
 	protected final String TEXT_5 = NL;
+	protected final String TEXT_6 = NL;
 
 	public HeaderProperties() {
 		//Here is the constructor
@@ -60,8 +61,8 @@ public class HeaderProperties extends org.eclipse.egf.emf.pattern.base.HeaderAbs
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_5);
-		stringBuffer.append(TEXT_5);
+		stringBuffer.append(TEXT_6);
+		stringBuffer.append(TEXT_6);
 		return stringBuffer.toString();
 	}
 

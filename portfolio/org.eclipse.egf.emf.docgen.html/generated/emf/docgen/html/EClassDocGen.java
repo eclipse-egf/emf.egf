@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package emf.docgen.html;
 
 import org.eclipse.egf.emf.docgen.html.util.*;
@@ -59,6 +59,7 @@ public class EClassDocGen extends emf.docgen.html.EClassifierDocGen {
 	protected final String TEXT_23 = NL + "\t\t<a href=\"";
 	protected final String TEXT_24 = "\">";
 	protected final String TEXT_25 = "</a>" + NL + "\t";
+	protected final String TEXT_26 = NL;
 
 	public EClassDocGen() {
 		//Here is the constructor
@@ -86,8 +87,8 @@ public class EClassDocGen extends emf.docgen.html.EClassifierDocGen {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_26);
+		stringBuffer.append(TEXT_26);
 		return stringBuffer.toString();
 	}
 

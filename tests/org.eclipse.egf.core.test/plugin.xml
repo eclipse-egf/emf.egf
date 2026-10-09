@@ -45,6 +45,12 @@
      <fcore
            id="resources/org.eclipse.egf.usecase.pattern.uc1/egf/Pattern_UC1_8_WorkspaceDomain.fcore">
      </fcore>
+     <fcore
+           id="resources/org.eclipse.egf.example.task.h3/egf/task_h3.fcore">
+     </fcore>
+     <fcore
+           id="resources/org.eclipse.egf.example.task.h4/egf/task_h4.fcore">
+     </fcore>
   </extension>
 
 </plugin>

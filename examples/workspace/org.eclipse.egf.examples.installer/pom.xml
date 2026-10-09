@@ -41,43 +41,25 @@
 						<configuration>
 							<target>
 								<echo>Zip and Copy component projects in zips</echo>
-								<delete dir="${basedir}/../org.eclipse.egf.example.emf.docgen.html/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.example.fcs/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.example.strategy.modeldriven/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.example.task.h1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.emf.uc1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.emf.uc2/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.emf.uc3/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.fc.uc1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.pattern.uc1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.pattern.uc2/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.portfolio.genchain.extension/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.generationchain.uc1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.activityworkflow.uc1/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.example.task.ant/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.portfolio.eclipse.build.examples/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.jet/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.usecase.pattern.uc3.m2treporting/target"/>
-								<delete dir="${basedir}/../org.eclipse.egf.example.task.h4/target"/>
-																
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.emf.docgen.html.zip"	basedir="${basedir}/../org.eclipse.egf.example.emf.docgen.html"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.fcs.zip"	basedir="${basedir}/../org.eclipse.egf.example.fcs"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.strategy.modeldriven.zip"	basedir="${basedir}/../org.eclipse.egf.example.strategy.modeldriven"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.h1.zip"	basedir="${basedir}/../org.eclipse.egf.example.task.h1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc1.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc2.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc2"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc3.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc3"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.fc.uc1.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.fc.uc1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc1.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc2.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc2"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.portfolio.genchain.extension.zip"	basedir="${basedir}/../org.eclipse.egf.portfolio.genchain.extension"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.generationchain.uc1.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.generationchain.uc1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.activityworkflow.uc1.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.activityworkflow.uc1"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.ant.zip"	basedir="${basedir}/../org.eclipse.egf.example.task.ant"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.portfolio.eclipse.build.examples.zip"	basedir="${basedir}/../org.eclipse.egf.portfolio.eclipse.build.examples"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.jet.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.jet"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc3.m2treporting.zip"	basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc3.m2treporting"/>
-								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.h4.zip"	basedir="${basedir}/../org.eclipse.egf.example.task.h4"/>							</target>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.emf.docgen.html.zip" basedir="${basedir}/../org.eclipse.egf.example.emf.docgen.html" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.fcs.zip" basedir="${basedir}/../org.eclipse.egf.example.fcs" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.strategy.modeldriven.zip" basedir="${basedir}/../org.eclipse.egf.example.strategy.modeldriven" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.h1.zip" basedir="${basedir}/../org.eclipse.egf.example.task.h1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc1.zip" basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc2.zip" basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc2" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.emf.uc3.zip" basedir="${basedir}/../org.eclipse.egf.usecase.emf.uc3" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.fc.uc1.zip" basedir="${basedir}/../org.eclipse.egf.usecase.fc.uc1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc1.zip" basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc2.zip" basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc2" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.portfolio.genchain.extension.zip" basedir="${basedir}/../org.eclipse.egf.portfolio.genchain.extension" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.generationchain.uc1.zip" basedir="${basedir}/../org.eclipse.egf.usecase.generationchain.uc1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.activityworkflow.uc1.zip" basedir="${basedir}/../org.eclipse.egf.usecase.activityworkflow.uc1" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.ant.zip" basedir="${basedir}/../org.eclipse.egf.example.task.ant" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.portfolio.eclipse.build.examples.zip" basedir="${basedir}/../org.eclipse.egf.portfolio.eclipse.build.examples" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.jet.zip" basedir="${basedir}/../org.eclipse.egf.usecase.jet" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.usecase.pattern.uc3.m2treporting.zip" basedir="${basedir}/../org.eclipse.egf.usecase.pattern.uc3.m2treporting" excludes="target/**"/>
+								<zip destfile="${basedir}/zips/org.eclipse.egf.example.task.h4.zip" basedir="${basedir}/../org.eclipse.egf.example.task.h4" excludes="target/**"/>
+							</target>
 						</configuration>
 						<goals>
 							<goal>run</goal>

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package egf.uc1_4.pattern;
 
 import org.eclipse.egf.common.helper.*;
@@ -26,6 +26,7 @@ public class ClassPattern {
 	protected final String TEXT_4 = "]" + NL + NL;
 	protected final String TEXT_5 = "\t=> ";
 	protected final String TEXT_6 = " attribute(s)" + NL + "[End. ";
+	protected final String TEXT_7 = NL;
 
 	public ClassPattern() {
 		//Here is the constructor
@@ -61,8 +62,8 @@ public class ClassPattern {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_7);
+		stringBuffer.append(TEXT_7);
 		return stringBuffer.toString();
 	}
 

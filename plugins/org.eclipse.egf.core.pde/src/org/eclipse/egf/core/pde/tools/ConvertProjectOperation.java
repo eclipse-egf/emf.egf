@@ -61,7 +61,6 @@ import org.eclipse.pde.internal.core.bundle.WorkspaceBundlePluginModel;
 import org.eclipse.pde.internal.core.ibundle.IBundle;
 import org.eclipse.pde.internal.core.ibundle.IBundlePluginModelBase;
 import org.eclipse.pde.internal.core.ibundle.IManifestHeader;
-import org.eclipse.pde.internal.core.natures.PDE;
 import org.eclipse.pde.internal.core.text.bundle.BundleSymbolicNameHeader;
 import org.eclipse.pde.internal.ui.util.ModelModification;
 import org.eclipse.pde.internal.ui.util.PDEModelUtility;
@@ -77,6 +76,10 @@ import org.osgi.framework.Version;
 public class ConvertProjectOperation extends WorkspaceModifyOperation {
 
     private static final String DEFAULT_LIBRARY = EGFCommonConstants.DOT_STRING;
+    
+    private static final String PDE_PLUGIN_NATURE = "org.eclipse.pde.PluginNature";
+    private static final String PDE_MANIFEST_BUILDER_ID = "org.eclipse.pde.ManifestBuilder";
+    private static final String PDE_SCHEMA_BUILDER_ID = "org.eclipse.pde.SchemaBuilder";
 
     private IProject _project;
 
@@ -158,12 +161,12 @@ public class ConvertProjectOperation extends WorkspaceModifyOperation {
             requiredBuilders.add(EGFNatures.PATTERN_BUILDER_ID);
         }
 
-        if (_project.hasNature(PDE.PLUGIN_NATURE)) {
+        if (_project.hasNature(PDE_PLUGIN_NATURE)) {
             hasPluginNature = true;
         } else
-            requiredNatures.add(PDE.PLUGIN_NATURE);
-        requiredBuilders.add(PDE.MANIFEST_BUILDER_ID);
-        requiredBuilders.add(PDE.SCHEMA_BUILDER_ID);
+            requiredNatures.add(PDE_PLUGIN_NATURE);
+        requiredBuilders.add(PDE_MANIFEST_BUILDER_ID);
+        requiredBuilders.add(PDE_SCHEMA_BUILDER_ID);
 
         if (_project.hasNature(JavaCore.NATURE_ID)) {
             hasJavaNature = true;

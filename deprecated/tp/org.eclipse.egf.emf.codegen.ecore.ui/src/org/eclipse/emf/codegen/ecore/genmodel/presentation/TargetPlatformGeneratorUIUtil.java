@@ -28,7 +28,7 @@ import java.util.Map;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.SubProgressMonitor;
-import org.eclipse.egf.core.EGFCorePlugin;
+import org.eclipse.egf.core.platform.EGFPlatformPlugin;
 import org.eclipse.emf.codegen.ecore.generator.Generator;
 import org.eclipse.emf.codegen.ecore.genmodel.GenModel;
 import org.eclipse.emf.codegen.ecore.genmodel.provider.GenModelEditPlugin;
@@ -60,7 +60,7 @@ public class TargetPlatformGeneratorUIUtil {
             List<GenModel> genModels = new ArrayList<GenModel>(uris.size());
             Map<String, Diagnostic> fileNameToErrorDiagnosticMap = new LinkedHashMap<String, Diagnostic>();
             ResourceSet resourceSet = new ResourceSetImpl();
-            resourceSet.setURIConverter(EGFCorePlugin.getTargetPlatformURIConverter());
+            resourceSet.setURIConverter(EGFPlatformPlugin.getPlatformURIConverter());
             for (URI uri : uris) {
                 progressMonitor.subTask(uri.toPlatformString(true));
                 Resource resource = resourceSet.getResource(uri, true);

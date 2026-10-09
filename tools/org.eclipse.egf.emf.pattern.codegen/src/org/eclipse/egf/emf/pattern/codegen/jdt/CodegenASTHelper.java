@@ -48,6 +48,7 @@ import org.eclipse.jdt.core.dom.Expression;
 import org.eclipse.jdt.core.dom.IfStatement;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
 import org.eclipse.jdt.core.dom.MethodInvocation;
+import org.eclipse.jdt.core.dom.NodeFinder;
 import org.eclipse.jdt.core.dom.SimpleName;
 import org.eclipse.jdt.core.dom.Statement;
 import org.eclipse.jdt.core.dom.StringLiteral;
@@ -61,7 +62,6 @@ import org.eclipse.jdt.core.search.SearchParticipant;
 import org.eclipse.jdt.core.search.SearchPattern;
 import org.eclipse.jdt.core.search.SearchRequestor;
 import org.eclipse.jdt.internal.core.search.JavaSearchParticipant;
-import org.eclipse.jdt.internal.corext.refactoring.structure.ASTNodeSearchUtil;
 
 /**
  * @author Matthieu Helleboid
@@ -382,8 +382,24 @@ public class CodegenASTHelper {
 	}
 
     protected MethodDeclaration getMethodDeclaration(IProject codegenProject, final IMethod method) throws JavaModelException {
-		CompilationUnit compilationUnit = compilationUnitHelper.getCompilationUnit(codegenProject, method);
-		return ASTNodeSearchUtil.getMethodDeclarationNode(method, compilationUnit);
+    	CompilationUnit compilationUnit =
+                compilationUnitHelper.getCompilationUnit(codegenProject, method);
+
+        ASTNode node = NodeFinder.perform(
+                compilationUnit,
+                method.getNameRange().getOffset(),
+                method.getNameRange().getLength());
+
+        while (node != null && !(node instanceof MethodDeclaration)) {
+            node = node.getParent();
+        }
+
+        if (node == null) {
+            throw new IllegalStateException(
+                    "Cannot locate declaration of " + method.getHandleIdentifier());
+        }
+
+        return (MethodDeclaration) node;
 	}
 
 	protected Map<SearchMatch, IMethod> computeCallingMethods(final IMethod method) throws CoreException {

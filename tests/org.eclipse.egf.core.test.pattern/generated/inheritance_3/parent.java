@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package inheritance_3;
 
 import org.eclipse.egf.common.helper.*;
@@ -22,6 +22,7 @@ public class parent {
 	protected final String TEXT_1 = "//default content";
 	protected final String TEXT_2 = "//mywork on ";
 	protected final String TEXT_3 = NL;
+	protected final String TEXT_4 = NL;
 
 	public parent() {
 		//Here is the constructor
@@ -59,8 +60,8 @@ public class parent {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_3);
-		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_4);
+		stringBuffer.append(TEXT_4);
 		return stringBuffer.toString();
 	}
 

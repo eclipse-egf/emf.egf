@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package egf.uc1_6.pattern;
 
 import java.util.*;
@@ -20,6 +20,7 @@ public class JetClassPattern {
 	public final String NL = nl == null ? (System.getProperties().getProperty("line.separator")) : nl;
 	protected final String TEXT_1 = "- Jet: ";
 	protected final String TEXT_2 = NL;
+	protected final String TEXT_3 = NL;
 
 	public JetClassPattern() {
 		//Here is the constructor
@@ -55,8 +56,8 @@ public class JetClassPattern {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_3);
 		return stringBuffer.toString();
 	}
 

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.emf.pattern.model.cdo;
 
 import org.eclipse.egf.emf.pattern.base.*;
@@ -51,6 +51,7 @@ public class PluginXMLForCDO extends org.eclipse.egf.emf.pattern.model.PluginXML
 	protected final String TEXT_20 = "\"" + NL + "            class=\"";
 	protected final String TEXT_21 = "\"" + NL + "      />" + NL + "   </extension>";
 	protected final String TEXT_22 = NL + NL + "</plugin>" + NL;
+	protected final String TEXT_23 = NL;
 
 	public PluginXMLForCDO() {
 		//Here is the constructor
@@ -86,8 +87,8 @@ public class PluginXMLForCDO extends org.eclipse.egf.emf.pattern.model.PluginXML
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_23);
+		stringBuffer.append(TEXT_23);
 		return stringBuffer.toString();
 	}
 

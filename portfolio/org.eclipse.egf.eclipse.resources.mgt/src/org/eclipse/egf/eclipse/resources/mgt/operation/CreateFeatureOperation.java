@@ -29,7 +29,6 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.Assert;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.pde.internal.core.natures.PDE;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 import org.eclipse.egf.eclipse.resources.mgt.util.EclipseModelsAccessor;
 
@@ -39,6 +38,9 @@ import org.eclipse.egf.eclipse.resources.mgt.util.EclipseModelsAccessor;
 
 @SuppressWarnings("restriction")
 public class CreateFeatureOperation extends WorkspaceModifyOperation {
+	
+	private static final String PDE_PLUGIN_NATURE = "org.eclipse.pde.PluginNature";
+	
 	// Feature project
 	protected IProject _project;
 	// General data about feature 
@@ -84,7 +86,7 @@ public class CreateFeatureOperation extends WorkspaceModifyOperation {
 			afFeature.open(monitor);
 			// Adding Feature Nature
 			IProjectDescription projectDescription = afFeature.getWorkspace().newProjectDescription(afFeature.getName());
-			String[] newIds = {PDE.FEATURE_NATURE};
+			String[] newIds = {PDE_PLUGIN_NATURE};
 			projectDescription.setNatureIds(newIds);
 			afFeature.setDescription(projectDescription,monitor);
 			// Create build.properties file 

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.usecase.emf.library.editor.pluginproperties;
 
 import org.eclipse.egf.common.helper.*;
@@ -78,6 +78,7 @@ public class EditorPluginPropertiesExtensionRedefinitionSolution
 	protected final String TEXT_28 = " Application" + NL + "_UI_About_text = ";
 	protected final String TEXT_29 = " Application about box goes here." + NL;
 	protected final String TEXT_30 = " Model Action Set";
+	protected final String TEXT_31 = NL;
 
 	public EditorPluginPropertiesExtensionRedefinitionSolution() {
 		//Here is the constructor
@@ -113,8 +114,8 @@ public class EditorPluginPropertiesExtensionRedefinitionSolution
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_7);
-		stringBuffer.append(TEXT_7);
+		stringBuffer.append(TEXT_31);
+		stringBuffer.append(TEXT_31);
 		return stringBuffer.toString();
 	}
 

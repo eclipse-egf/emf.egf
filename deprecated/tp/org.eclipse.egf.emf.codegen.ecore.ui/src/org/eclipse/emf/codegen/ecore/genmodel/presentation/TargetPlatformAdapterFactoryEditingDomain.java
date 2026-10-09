@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2009-2010 Thales Corporate Services S.A.S.
+ * Copyright (c) 2009-2026 Thales Corporate Services S.A.S.
  * This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v2.0
  * which accompanies this distribution, and is available at
@@ -14,7 +14,7 @@ package org.eclipse.emf.codegen.ecore.genmodel.presentation;
 
 import java.util.Map;
 
-import org.eclipse.egf.core.EGFCorePlugin;
+import org.eclipse.egf.core.platform.EGFPlatformPlugin;
 import org.eclipse.emf.common.command.CommandStack;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -31,7 +31,7 @@ public class TargetPlatformAdapterFactoryEditingDomain extends AdapterFactoryEdi
      */
     public TargetPlatformAdapterFactoryEditingDomain(AdapterFactory adapterFactory, CommandStack commandStack) {
         super(adapterFactory, commandStack);
-        resourceSet.setURIConverter(EGFCorePlugin.getTargetPlatformURIConverter());
+        resourceSet.setURIConverter(EGFPlatformPlugin.getPlatformURIConverter());
     }
 
     /**
@@ -39,7 +39,7 @@ public class TargetPlatformAdapterFactoryEditingDomain extends AdapterFactoryEdi
      */
     public TargetPlatformAdapterFactoryEditingDomain(AdapterFactory adapterFactory, CommandStack commandStack, Map<Resource, Boolean> resourceToReadOnlyMap) {
         super(adapterFactory, commandStack, resourceToReadOnlyMap);
-        resourceSet.setURIConverter(EGFCorePlugin.getTargetPlatformURIConverter());
+        resourceSet.setURIConverter(EGFPlatformPlugin.getPlatformURIConverter());
     }
 
 }

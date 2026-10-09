@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2009-2010 Thales Corporate Services S.A.S.
+ * Copyright (c) 2009-2026 Thales Corporate Services S.A.S.
  * This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v2.0
  * which accompanies this distribution, and is available at
@@ -15,7 +15,7 @@ package org.eclipse.emf.importer.ui;
 import java.util.List;
 
 import org.eclipse.core.resources.IFile;
-import org.eclipse.egf.core.EGFCorePlugin;
+import org.eclipse.egf.core.platform.EGFPlatformPlugin;
 import org.eclipse.egf.emf.importer.l10n.TargetPlatformEMFImporterMessages;
 import org.eclipse.emf.codegen.ecore.genmodel.GenModel;
 import org.eclipse.emf.common.util.URI;
@@ -56,7 +56,7 @@ public class TargetPlatformEMFModelWizard extends EMFModelWizard {
         if (reloadFile != null) {
             URI reloadURI = URI.createPlatformResourceURI(reloadFile.getFullPath().toString(), true);
             ResourceSet resourceSet = new ResourceSetImpl();
-            resourceSet.setURIConverter(EGFCorePlugin.getTargetPlatformURIConverter());
+            resourceSet.setURIConverter(EGFPlatformPlugin.getPlatformURIConverter());
             Resource reloadResource = null;
             try {
                 reloadResource = resourceSet.getResource(reloadURI, true);

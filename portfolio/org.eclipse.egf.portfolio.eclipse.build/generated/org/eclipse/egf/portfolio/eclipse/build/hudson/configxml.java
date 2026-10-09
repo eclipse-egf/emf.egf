@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.hudson;
 
 import org.eclipse.egf.common.helper.*;
@@ -31,6 +31,7 @@ public class configxml extends org.eclipse.egf.portfolio.eclipse.build.JobFilePa
 	protected final String TEXT_9 = NL + "  </publishers>" + NL + "  <triggers class=\"vector\">";
 	protected final String TEXT_10 = NL + "  </triggers>";
 	protected final String TEXT_11 = "</project>";
+	protected final String TEXT_12 = NL;
 
 	public configxml() {
 		//Here is the constructor
@@ -66,8 +67,8 @@ public class configxml extends org.eclipse.egf.portfolio.eclipse.build.JobFilePa
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_4);
-		stringBuffer.append(TEXT_4);
+		stringBuffer.append(TEXT_12);
+		stringBuffer.append(TEXT_12);
 		return stringBuffer.toString();
 	}
 

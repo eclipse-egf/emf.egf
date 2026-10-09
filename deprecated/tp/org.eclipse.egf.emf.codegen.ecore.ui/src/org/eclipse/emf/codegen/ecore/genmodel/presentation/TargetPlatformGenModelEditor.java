@@ -22,6 +22,7 @@ package org.eclipse.emf.codegen.ecore.genmodel.presentation;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.EventObject;
+import java.util.Iterator;
 
 import org.eclipse.emf.common.command.BasicCommandStack;
 import org.eclipse.emf.common.command.Command;
@@ -39,6 +40,7 @@ import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.PartInitException;
+import org.eclipse.ui.views.properties.PropertySheetPage;
 
 /**
  * This is an example of a target platform Ecore model editor.
@@ -140,8 +142,11 @@ public class TargetPlatformGenModelEditor extends GenModelEditor implements IPlu
                             setSelectionToViewer(mostRecentCommand.getAffectedObjects());
                         }
 
-                        if (propertySheetPage != null && !propertySheetPage.getControl().isDisposed()) {
-                            propertySheetPage.refresh();
+                        for (Iterator<PropertySheetPage> iterator = propertySheetPages.iterator(); iterator.hasNext();) {
+                            PropertySheetPage propertySheetPage = iterator.next();
+	                        if (propertySheetPage != null && !propertySheetPage.getControl().isDisposed()) {
+	                            propertySheetPage.refresh();
+	                        }
                         }
                     }
 

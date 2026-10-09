@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package emf.docgen.html;
 
 import org.eclipse.egf.emf.docgen.html.util.*;

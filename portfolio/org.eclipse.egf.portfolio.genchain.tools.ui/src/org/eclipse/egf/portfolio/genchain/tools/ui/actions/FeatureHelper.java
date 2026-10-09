@@ -133,7 +133,6 @@ public class FeatureHelper {
 				FeaturePlugin fplugin = (FeaturePlugin) model.getFactory().createPlugin();
 				fplugin.loadFrom(plugin);
 				fplugin.setVersion("0.0.0"); //$NON-NLS-1$
-				fplugin.setUnpack(false);
 				added[i] = fplugin;
 			}
 			feature.addPlugins(added);

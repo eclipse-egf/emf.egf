@@ -17,6 +17,21 @@
    </configIni>
 
    <launcherArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=17
+-Dosgi.dataAreaRequiresExplicitInit=true
+-Declipse.e4.inject.javax.warning=false
+-Declipse.platform.mergeTrust=true
+-Dsun.java.command=EGF
+-Dpde.jreProfile=JavaSE-17
+-Dlogback.configurationFile=configuration/logback.xml
+--add-modules=ALL-SYSTEM
+-Xms1000m
+-Xmx3000m
+-Xss4m
+-Dorg.slf4j.simpleLogger.defaultLogLevel=off
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
@@ -33,6 +48,9 @@
    </vm>
 
    <plugins>
+      <plugin id="org.apache.felix.scr"/>
+      <plugin id="org.apache.aries.spifly.dynamic.bundle"/>
+      <plugin id="slf4j.simple"/>
    </plugins>
 
    <features>
@@ -59,11 +77,9 @@
       <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.help"/>
       <feature id="org.eclipse.equinox.p2.core.feature"/>
-      <feature id="org.eclipse.ecf.core.ssl.feature"/>
       <feature id="org.eclipse.egf.model.ftask.edit.feature"/>
       <feature id="org.eclipse.rcp"/>
       <feature id="org.eclipse.equinox.p2.rcp.feature"/>
-      <feature id="org.eclipse.ecf.filetransfer.feature"/>
       <feature id="org.eclipse.equinox.p2.user.ui"/>
       <feature id="org.eclipse.equinox.p2.extras.feature"/>
       <feature id="org.eclipse.ecf.core.feature"/>

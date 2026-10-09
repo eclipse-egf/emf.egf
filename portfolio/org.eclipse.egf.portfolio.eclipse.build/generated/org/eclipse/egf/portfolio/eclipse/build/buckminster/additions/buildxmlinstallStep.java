@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -46,6 +46,7 @@ public class buildxmlinstallStep extends org.eclipse.egf.portfolio.eclipse.build
 			+ "                <arg value=\"";
 	protected final String TEXT_15 = NL + "            </args>" + NL + "        </eclipse.launch>" + NL
 			+ "\t</target>\t" + NL;
+	protected final String TEXT_16 = NL;
 
 	public buildxmlinstallStep() {
 		//Here is the constructor
@@ -85,8 +86,8 @@ public class buildxmlinstallStep extends org.eclipse.egf.portfolio.eclipse.build
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_3);
-		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_16);
+		stringBuffer.append(TEXT_16);
 		return stringBuffer.toString();
 	}
 

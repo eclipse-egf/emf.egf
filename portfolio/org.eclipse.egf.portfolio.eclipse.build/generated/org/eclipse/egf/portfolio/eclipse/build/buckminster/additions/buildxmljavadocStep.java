@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.buckminster.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -42,6 +42,7 @@ public class buildxmljavadocStep extends org.eclipse.egf.portfolio.eclipse.build
 	protected final String TEXT_14 = NL + "\t\t</fileset>";
 	protected final String TEXT_15 = NL + NL + "<!-- TODO better handling of copyright (escape chars) -->" + NL
 			+ "<!-- <bottom>copyright</bottom> -->" + NL + "\t</javadoc>" + NL + "</target>" + NL + NL;
+	protected final String TEXT_16 = NL;
 
 	public buildxmljavadocStep() {
 		//Here is the constructor
@@ -81,8 +82,8 @@ public class buildxmljavadocStep extends org.eclipse.egf.portfolio.eclipse.build
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_6);
-		stringBuffer.append(TEXT_6);
+		stringBuffer.append(TEXT_16);
+		stringBuffer.append(TEXT_16);
 		return stringBuffer.toString();
 	}
 

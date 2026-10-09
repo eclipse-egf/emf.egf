@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package substitution3.base;
 
 import org.eclipse.egf.common.helper.*;
@@ -21,6 +21,7 @@ public class A {
 	public final String NL = nl == null ? (System.getProperties().getProperty("line.separator")) : nl;
 	protected final String TEXT_1 = "A on ";
 	protected final String TEXT_2 = NL;
+	protected final String TEXT_3 = NL;
 
 	public A() {
 		//Here is the constructor
@@ -56,8 +57,8 @@ public class A {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_3);
 		return stringBuffer.toString();
 	}
 

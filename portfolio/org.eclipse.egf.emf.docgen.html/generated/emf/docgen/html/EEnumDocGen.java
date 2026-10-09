@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package emf.docgen.html;
 
 import org.eclipse.egf.emf.docgen.html.util.*;
@@ -29,6 +29,7 @@ public class EEnumDocGen extends emf.docgen.html.EDataTypeDocGen {
 	protected final String TEXT_5 = "</b></td>" + NL + "   \t\t\t<td align=center>";
 	protected final String TEXT_6 = "</td>" + NL + "   \t\t</tr>" + NL + "\t";
 	protected final String TEXT_7 = NL + "\t</table>";
+	protected final String TEXT_8 = NL;
 
 	public EEnumDocGen() {
 		//Here is the constructor
@@ -56,8 +57,8 @@ public class EEnumDocGen extends emf.docgen.html.EDataTypeDocGen {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_8);
+		stringBuffer.append(TEXT_8);
 		return stringBuffer.toString();
 	}
 

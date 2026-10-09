@@ -1,4 +1,4 @@
-//Generated with EGF 1.2.0.v20150211-1405
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.genchain.ecoretools.pattern;
 
 import java.util.*;
@@ -67,11 +67,14 @@ public class ecoreTools {
 	}
 
 	protected void method_body(final StringBuffer out, final PatternContext ctx) throws Exception {
-		Map<GenerationElement, FactoryComponent> fcs = (Map<GenerationElement, FactoryComponent>) ctx.getValue(FcoreBuilderConstants.CURRENT_FCORE);
+		Map<GenerationElement, FactoryComponent> fcs = (Map<GenerationElement, FactoryComponent>) ctx
+				.getValue(FcoreBuilderConstants.CURRENT_FCORE);
 		FactoryComponent fc = fcs.get((GenerationElement) (parameter.eContainer()));
 		ResourceSet resourceSet = fc.eResource().getResourceSet();
 		ProductionPlan pp = (ProductionPlan) fc.getOrchestration();
-		URI uri = URI.createURI("platform:/plugin/org.eclipse.egf.portfolio.genchain.ecoretools/egf/ecoreToolsExtension.fcore#_wQgLIHS0EeC3aZAQAbtFJA", false);
+		URI uri = URI.createURI(
+				"platform:/plugin/org.eclipse.egf.portfolio.genchain.ecoretools/egf/ecoreToolsExtension.fcore#_wQgLIHS0EeC3aZAQAbtFJA",
+				false);
 		Activity activity = (Activity) resourceSet.getEObject(uri, true);
 
 		Map<String, Type> contract2type = new HashMap<String, Type>();
@@ -97,7 +100,8 @@ public class ecoreTools {
 
 	protected org.eclipse.egf.portfolio.genchain.ecoretools.ecoreToolsExtension.EcoreToolsGeneration parameter;
 
-	public void set_parameter(org.eclipse.egf.portfolio.genchain.ecoretools.ecoreToolsExtension.EcoreToolsGeneration parameter) {
+	public void set_parameter(
+			org.eclipse.egf.portfolio.genchain.ecoretools.ecoreToolsExtension.EcoreToolsGeneration parameter) {
 		this.parameter = parameter;
 	}
 

@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.hudson.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -25,6 +25,7 @@ public class PropertybuildId extends org.eclipse.egf.portfolio.eclipse.build.hud
 			+ "      <changeBUILDID>true</changeBUILDID>" + NL + "      <pattern>";
 	protected final String TEXT_2 = "</pattern>" + NL + "    </hudson.plugins.zentimestamp.ZenTimestampJobProperty>";
 	protected final String TEXT_3 = NL;
+	protected final String TEXT_4 = NL;
 
 	public PropertybuildId() {
 		//Here is the constructor
@@ -62,8 +63,8 @@ public class PropertybuildId extends org.eclipse.egf.portfolio.eclipse.build.hud
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_3);
-		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_4);
+		stringBuffer.append(TEXT_4);
 		return stringBuffer.toString();
 	}
 

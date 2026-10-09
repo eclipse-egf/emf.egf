@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package fcore.builder.patterns;
 
 import java.util.Collection;
@@ -21,7 +21,6 @@ public class GenerationChainPattern {
 	public GenerationChainPattern() {
 		//Here is the constructor
 		// add initialisation of the pattern variables (declaration has been already done).
-
 	}
 
 	public void generate(Object argument) throws Exception {

@@ -35,7 +35,6 @@ import org.eclipse.pde.internal.core.ifeature.IFeatureChild;
 import org.eclipse.pde.internal.core.ifeature.IFeatureModel;
 import org.eclipse.pde.internal.core.ifeature.IFeaturePlugin;
 import org.eclipse.pde.internal.core.project.PDEProject;
-import org.eclipse.pde.internal.core.util.CoreUtility;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 import org.eclipse.egf.eclipse.resources.mgt.util.EclipseModelsAccessor;
 
@@ -101,7 +100,6 @@ public class UpdateFeatureOperation extends WorkspaceModifyOperation{
 			fplugin.loadFrom(candidate.getPluginBase());
 //			fplugin.setVersion(candidate.getPluginBase().getVersion()); //$NON-NLS-1$
 			fplugin.setVersion(DEFAULT_VERSION);
-			fplugin.setUnpack(CoreUtility.guessUnpack(candidate.getBundleDescription()));
 			candidate_plugin[i] = fplugin;
 		}
 		

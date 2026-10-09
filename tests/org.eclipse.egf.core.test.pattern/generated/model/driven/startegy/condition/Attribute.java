@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package model.driven.startegy.condition;
 
 import org.eclipse.egf.common.helper.*;
@@ -21,6 +21,7 @@ public class Attribute {
 	public final String NL = nl == null ? (System.getProperties().getProperty("line.separator")) : nl;
 	protected final String TEXT_1 = "found Attribute ";
 	protected final String TEXT_2 = NL;
+	protected final String TEXT_3 = NL;
 
 	public Attribute() {
 		//Here is the constructor
@@ -56,8 +57,8 @@ public class Attribute {
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_2);
-		stringBuffer.append(TEXT_2);
+		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_3);
 		return stringBuffer.toString();
 	}
 

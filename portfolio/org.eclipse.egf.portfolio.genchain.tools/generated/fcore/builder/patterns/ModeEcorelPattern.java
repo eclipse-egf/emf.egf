@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package fcore.builder.patterns;
 
 import java.util.HashMap;
@@ -37,7 +37,6 @@ public class ModeEcorelPattern {
 		this.editorActivity = "platform:/plugin/org.eclipse.egf.emf.pattern/egf/EMF_Pattern.fcore#_PkqGcDG0Ed-kc8dEZsdm2w";
 		this.testActivity = "platform:/plugin/org.eclipse.egf.emf.pattern/egf/EMF_Pattern.fcore#_PoF08DG0Ed-kc8dEZsdm2w";
 		this.javadocActivity = "platform:/plugin/org.eclipse.egf.portfolio.ant.javadoc/egf/javadocTask.fcore#_dj3IUEKMEeCptI_ayXHmng";
-
 	}
 
 	public void generate(Object argument) throws Exception {

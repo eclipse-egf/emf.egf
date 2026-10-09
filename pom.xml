@@ -37,12 +37,11 @@
 	<properties>
 		<tycho-version>4.0.13</tycho-version>
 		<tycho-extras-version>4.0.13</tycho-extras-version>
-		<platform-version-name>2023-03</platform-version-name>
+		<platform-version-name>2025-09</platform-version-name>
 		
 		<tycho.scmUrl>scm:git:https://git.eclipse.org/r/egf/org.eclipse.emf.egf</tycho.scmUrl>
 		
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.release>17</maven.compiler.release>
 
 
 		<jacoco.coverage.skip>false</jacoco.coverage.skip>
@@ -137,7 +136,7 @@
 					<version>${tycho-version}</version>
 					<configuration>
 						<targetDefinitionIncludeSource>honor</targetDefinitionIncludeSource>
-						<executionEnvironment>JavaSE-17</executionEnvironment>
+						<executionEnvironment>JavaSE-21</executionEnvironment>
 						<dependency-resolution>
 							<optionalDependencies>ignore</optionalDependencies>
 						</dependency-resolution>
@@ -185,6 +184,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
+				<module>releng/org.eclipse.egf.targets</module>
 				<!-- plugins -->
 				<module>examples/workspace/org.eclipse.egf.examples.installer</module>
 				<module>examples/workspace/org.eclipse.egf.example.emf.docgen.html</module>
@@ -428,7 +428,7 @@
 					<version>${tycho-version}</version>
 					<configuration>
 						<pomDependencies>consider</pomDependencies>
-						<executionEnvironment>JavaSE-17</executionEnvironment>
+						<executionEnvironment>JavaSE-21</executionEnvironment>
 						<environments>
 							<environment>
 								<os>linux</os>

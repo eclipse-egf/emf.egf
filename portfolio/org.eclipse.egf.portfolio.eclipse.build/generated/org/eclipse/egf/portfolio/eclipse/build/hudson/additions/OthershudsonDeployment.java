@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.hudson.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -30,6 +30,7 @@ public class OthershudsonDeployment extends org.eclipse.egf.portfolio.eclipse.bu
 	protected final String TEXT_7 = "-->";
 	protected final String TEXT_8 = NL + "  <!--userDeployJobName=";
 	protected final String TEXT_9 = NL;
+	protected final String TEXT_10 = NL;
 
 	public OthershudsonDeployment() {
 		//Here is the constructor
@@ -68,8 +69,8 @@ public class OthershudsonDeployment extends org.eclipse.egf.portfolio.eclipse.bu
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_9);
-		stringBuffer.append(TEXT_9);
+		stringBuffer.append(TEXT_10);
+		stringBuffer.append(TEXT_10);
 		return stringBuffer.toString();
 	}
 

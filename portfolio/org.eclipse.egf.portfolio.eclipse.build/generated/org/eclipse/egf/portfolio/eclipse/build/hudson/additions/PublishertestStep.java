@@ -1,4 +1,4 @@
-//Generated with EGF 1.6.3.202110181143
+//Generated with EGF 1.6.5.qualifier
 package org.eclipse.egf.portfolio.eclipse.build.hudson.additions;
 
 import org.eclipse.egf.common.helper.*;
@@ -31,6 +31,7 @@ public class PublishertestStep extends org.eclipse.egf.portfolio.eclipse.build.h
 			+ "        <minLine>0</minLine>" + NL + "        <maxLine>0</maxLine>" + NL + "      </healthReports>" + NL
 			+ "    </hudson.plugins.emma.EmmaPublisher>";
 	protected final String TEXT_3 = NL;
+	protected final String TEXT_4 = NL;
 
 	public PublishertestStep() {
 		//Here is the constructor
@@ -69,8 +70,8 @@ public class PublishertestStep extends org.eclipse.egf.portfolio.eclipse.build.h
 			ctx.getReporter().executionFinished(OutputManager.computeExecutionOutput(ctx), ctx);
 		}
 
-		stringBuffer.append(TEXT_3);
-		stringBuffer.append(TEXT_3);
+		stringBuffer.append(TEXT_4);
+		stringBuffer.append(TEXT_4);
 		return stringBuffer.toString();
 	}
 
