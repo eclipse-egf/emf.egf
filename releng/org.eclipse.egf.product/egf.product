@@ -17,12 +17,12 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Dosgi.requiredJavaVersion=17
+      <vmArgs>-Dosgi.requiredJavaVersion=21
 -Dosgi.dataAreaRequiresExplicitInit=true
 -Declipse.e4.inject.javax.warning=false
 -Declipse.platform.mergeTrust=true
 -Dsun.java.command=EGF
--Dpde.jreProfile=JavaSE-17
+-Dpde.jreProfile=JavaSE-21
 -Dlogback.configurationFile=configuration/logback.xml
 --add-modules=ALL-SYSTEM
 -Xms1000m
