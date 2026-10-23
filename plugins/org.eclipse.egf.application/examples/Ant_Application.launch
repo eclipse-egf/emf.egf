@@ -14,10 +14,10 @@
 <booleanAttribute key="default" value="true"/>
 <booleanAttribute key="includeOptional" value="true"/>
 <stringAttribute key="location" value="${workspace_loc}/../runtime-main"/>
-<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} &#13;&#10;-ws ${target.ws} &#13;&#10;-arch ${target.arch} &#13;&#10;-nl ${target.nl} &#13;&#10;-buildfile ${resource_loc} &#13;&#10;-consoleLog"/>
 <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms128m &#13;&#10;-Xmx512m &#13;&#10;-XX:PermSize=64M &#13;&#10;-XX:MaxPermSize=512M &#13;&#10;-Dorg.eclipse.emf.examples.generator.validator=false"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xms128m &#13;&#10;-Xmx512m &#13;&#10;-Dorg.eclipse.emf.examples.generator.validator=false"/>
 <stringAttribute key="pde.version" value="3.3"/>
 <stringAttribute key="product" value="org.eclipse.platform.ide"/>
 <booleanAttribute key="show_selected_only" value="false"/>
