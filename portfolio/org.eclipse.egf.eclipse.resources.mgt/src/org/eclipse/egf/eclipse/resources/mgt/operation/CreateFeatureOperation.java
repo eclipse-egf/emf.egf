@@ -31,6 +31,7 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
 import org.eclipse.egf.eclipse.resources.mgt.util.EclipseModelsAccessor;
+import org.eclipse.pde.internal.core.natures.FeatureProject;
 
 /**
  * @author Boubekeur Zendagui
@@ -38,8 +39,6 @@ import org.eclipse.egf.eclipse.resources.mgt.util.EclipseModelsAccessor;
 
 @SuppressWarnings("restriction")
 public class CreateFeatureOperation extends WorkspaceModifyOperation {
-	
-	private static final String PDE_PLUGIN_NATURE = "org.eclipse.pde.PluginNature";
 	
 	// Feature project
 	protected IProject _project;
@@ -86,7 +85,7 @@ public class CreateFeatureOperation extends WorkspaceModifyOperation {
 			afFeature.open(monitor);
 			// Adding Feature Nature
 			IProjectDescription projectDescription = afFeature.getWorkspace().newProjectDescription(afFeature.getName());
-			String[] newIds = {PDE_PLUGIN_NATURE};
+			String[] newIds = {FeatureProject.NATURE};
 			projectDescription.setNatureIds(newIds);
 			afFeature.setDescription(projectDescription,monitor);
 			// Create build.properties file 
